@@ -7,27 +7,34 @@
 @import "home-page";
 @import "about";
 
+h1 {
+    color: @colr;
+}
+
 @media(min-width: 1000px) {
 
     .navigation {
+        display: flex;
+        justify-content: space-between;
         width: 100%;
-        height: 50px;
         background-color: @bck-clr;
+        height: 100px;
+        box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
     }
     
     .links {
         display: flex;
         justify-content: space-evenly;
         margin: 1%;
-        width: 40%;
+        width: 100%;
         vertical-align: middle;
     }
     
     nav a {
         text-decoration: none;
-        font-size: 2rem;
-        color: white;
-        margin: 0 4%;
+        font-size: 2.2rem;
+        color: @colr;
+        padding: 30px;
     }
 
     h1 {
@@ -37,33 +44,33 @@
         font-size: 4rem;
         font-weight: bold;
         padding-top: 10px;
-        animation: yourAnimation 5s forwards 0s linear;
+        //animation: yourAnimation 2s forwards 0s linear;
     }
 
-    @keyframes yourAnimation{
-        0%{
-            transform: rotate(0) scale(1.8) translateY(-15%) skewX(0p) skewY(-25deg);
-            opacity: 0;
-            }
-        50%{
-            transform: rotate(0) scale(1.8) translateY(10);
-            opacity: 1;
-            }
-        100%{
-            transform: rotate(0) scale(1.8);
-            opacity: 1;
-            }
-    }
+    // @keyframes yourAnimation{
+    //     0%{
+    //         transform: rotate(0) scale(1.4) translateY(-15%) skewX(0p) skewY(-25deg);
+    //         opacity: 0;
+    //         }
+    //     50%{
+    //         transform: rotate(0) scale(1.4) translateY(10);
+    //         opacity: 1;
+    //         }
+    //     100%{
+    //         transform: rotate(0) scale(1.4);
+    //         opacity: 1;
+    //         }
+    // }
     
     h2 {
         margin: 5px 0;
-        font-size: 2.0rem;
+        font-size: 2.3rem;
     }
 
     p {
         margin: 5px 0;
         font-style: italic;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .team {
@@ -85,11 +92,13 @@
             width: 90%;
             height: 300px;
             border-radius: 15px;
+            padding-bottom: 8px;
         }
 
         .role {
             margin: 5px 0;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
+            padding-top: 2px;
         }
 
         .linkedIn {
@@ -106,32 +115,34 @@
     footer {
         background-color: @bck-clr;
         width: 100%;
-        height: 70px;
+        height: 100px;
       .mixin-class();
     }
 }
 
 @media(max-width: 999px) {
     .navigation {
+        display: flex;
+        justify-content: space-between;
         width: 100%;
-        height: 50px;
         background-color: @bck-clr;
+        height: 70px;
+        box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
     }
     
     .links {
         display: flex;
         justify-content: space-evenly;
         margin: 1%;
-        width: 50%;
+        width: 100%;
         vertical-align: middle;
-        padding-right: 10px;
     }
     
     nav a {
         text-decoration: none;
-        font-size: 1.5rem;
-        color: white;
-        margin: 0 4%;
+        font-size: 1.9rem;
+        color: @colr;
+        padding: 10px;
     }
     h1 {
         display: flex;
@@ -204,7 +215,10 @@
     .navigation {
         width: 100%;
         height: 50px;
+        display: flex;
+        justify-content: space-between;
         background-color: @bck-clr;
+        box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
     }
     
     .links {
@@ -218,9 +232,9 @@
     nav a {
         text-decoration: none;
         font-size: 1.5rem;
-        color: white;
-        margin: 0 4%;
+        color: @colr;
     }
+    
     h1 {
         display: flex;
         justify-content: center;
@@ -287,7 +301,7 @@
     footer {
         background-color: @bck-clr;
         width: 100%;
-        height: 70px;
+        height: 50px;
         .mixin-class();
     }
 

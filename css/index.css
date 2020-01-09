@@ -223,9 +223,6 @@ h2 {
   z-index: 20!important;
 }
 @media (max-width: 500px) {
-  body {
-    background-color: #631287;
-  }
   .one {
     position: absolute;
     width: 151px;
@@ -432,9 +429,6 @@ h2 {
   }
 }
 @media screen and (min-width: 501px) {
-  body {
-    background-color: #631287;
-  }
   .one {
     position: absolute;
     width: 404px;
@@ -640,9 +634,6 @@ h2 {
   }
 }
 @media screen and (min-width: 1000px) {
-  body {
-    background-color: #631287;
-  }
   .one {
     position: absolute;
     width: 404px;
@@ -847,7 +838,31 @@ h2 {
     color: #FFFFFF;
   }
 }
+h1 {
+  color: #1DB954;
+}
 @media (min-width: 1000px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #353D45;
+    height: 100px;
+    box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
+  }
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1%;
+    width: 100%;
+    vertical-align: middle;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #1DB954;
+    padding: 30px;
+  }
   h1 {
     display: flex;
     justify-content: center;
@@ -855,30 +870,15 @@ h2 {
     font-size: 4rem;
     font-weight: bold;
     padding-top: 10px;
-    animation: yourAnimation 5s forwards 0s linear;
-  }
-  @keyframes yourAnimation {
-    0% {
-      transform: rotate(0) scale(1.8) translateY(-15%) skewX(0p) skewY(-25deg);
-      opacity: 0;
-    }
-    50% {
-      transform: rotate(0) scale(1.8) translateY(10);
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(0) scale(1.8);
-      opacity: 1;
-    }
   }
   h2 {
     margin: 5px 0;
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   p {
     margin: 5px 0;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .team {
     display: flex;
@@ -898,10 +898,12 @@ h2 {
     width: 90%;
     height: 300px;
     border-radius: 15px;
+    padding-bottom: 8px;
   }
   .team .role {
     margin: 5px 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    padding-top: 2px;
   }
   .team .linkedIn {
     max-width: 55px;
@@ -914,7 +916,7 @@ h2 {
   footer {
     background-color: #353D45;
     width: 100%;
-    height: 70px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -922,6 +924,27 @@ h2 {
   }
 }
 @media (max-width: 999px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #353D45;
+    height: 70px;
+    box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
+  }
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1%;
+    width: 100%;
+    vertical-align: middle;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: #1DB954;
+    padding: 10px;
+  }
   h1 {
     display: flex;
     justify-content: center;
@@ -981,6 +1004,26 @@ h2 {
   }
 }
 @media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #353D45;
+    box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
+  }
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1%;
+    width: 100%;
+    vertical-align: middle;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #1DB954;
+  }
   h1 {
     display: flex;
     justify-content: center;
@@ -1035,7 +1078,7 @@ h2 {
   footer {
     background-color: #353D45;
     width: 100%;
-    height: 70px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
