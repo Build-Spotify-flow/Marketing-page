@@ -7,6 +7,7 @@
 @import "home-page";
 @import "about";
 
+
 @media(min-width: 1000px) {
     h1 {
         display: flex;
@@ -15,9 +16,26 @@
         font-size: 4rem;
         font-weight: bold;
         padding-top: 10px;
+        animation: yourAnimation 5s forwards 0s linear;
     }
 
+    @keyframes yourAnimation{
+        0%{
+            transform: rotate(0) scale(1.8) translateY(-15%) skewX(0p) skewY(-25deg);
+            opacity: 0;
+            }
+        50%{
+            transform: rotate(0) scale(1.8) translateY(10);
+            opacity: 1;
+            }
+        100%{
+            transform: rotate(0) scale(1.8);
+            opacity: 1;
+            }
+    }
+    
     h2 {
+
         margin: 5px 0;
         font-size: 2.0rem;
     }
