@@ -1,4 +1,35 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "global";
+@import "navigation";
+@import "footer";
+@import "home-page";
+@import "about";
+
 @media(min-width: 1000px) {
+
+    .navigation {
+        width: 100%;
+        height: 50px;
+        background-color: @bck-clr;
+    }
+    
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1%;
+        width: 40%;
+        vertical-align: middle;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+        margin: 0 4%;
+    }
+
     h1 {
         display: flex;
         justify-content: center;
@@ -6,37 +37,9 @@
         font-size: 4rem;
         font-weight: bold;
         padding-top: 10px;
-        /* animation: yourAnimation 30s infinite  30s ease; */
         animation: yourAnimation 5s forwards 0s linear;
-        /* animation: yourAnimation .7s forwards 0s ease; */
     }
-/* MAKES H1 SPIN */
 
-/* 
-    @keyframes yourAnimation{
-        0%{
-            }
-        4%{
-            transform: rotate(0deg) scale(1.8) translateY(-10%) skewX(0);
-            opacity: 1;
-            }
-        30%{
-            transform: rotate(0deg) scale(1.8);
-            }
-        50%{
-            transform: rotate(0deg);
-            }
-        57%{
-            transform: rotate(180deg);
-            }
-        97%{
-            transform: rotate(0deg) scale(1.8) translateY(-15%) skewX(0);
-            }
-        100%{
-            transform: rotate(380deg);
-            }
-    } */
-    /* MAKES H1 FADE IN */
     @keyframes yourAnimation{
         0%{
             transform: rotate(0) scale(1.8) translateY(-15%) skewX(0p) skewY(-25deg);
@@ -70,47 +73,66 @@
         max-width: 1200px;
         width: 100%;
         margin: 5% auto;
-    }
-
-    .person {
+      
+      .person {
         text-align: center;
-        border-radius: 15px;
+        border-radius: @brd-rds;
         width: 30%;
         margin: 3%;
-    }
+        }
 
-    .picture {
-        width: 90%;
-        height: 300px;
-        border-radius: 15px;
-    }
+        .picture {
+            width: 90%;
+            height: 300px;
+            border-radius: 15px;
+        }
 
-    .role {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
+        .role {
+            margin: 5px 0;
+            font-size: 1.5rem;
+        }
 
-    .linkedIn {
-        max-width: 55px;
-        margin: 0 3px;
-    }
+        .linkedIn {
+            max-width: 55px;
+            margin: 0 3px;
+        }
 
-    .gitHub {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
+        .gitHub {
+            max-width: 55px;
+            margin: 0 3px;
+        }
+   }
+  
     footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DB7C1E;
+        background-color: @bck-clr;
         width: 100%;
         height: 70px;
+      .mixin-class();
     }
 }
 
 @media(max-width: 999px) {
+    .navigation {
+        width: 100%;
+        height: 50px;
+        background-color: @bck-clr;
+    }
+    
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1%;
+        width: 50%;
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+        margin: 0 4%;
+    }
     h1 {
         display: flex;
         justify-content: center;
@@ -138,47 +160,67 @@
         max-width: 1200px;
         width: 100%;
         margin: 5% auto;
+        
+        .person {
+            text-align: center;
+            border-radius: @brd-rds;
+            width: 30%;
+            margin: 3%;
+        }
+
+        .picture {
+            width: 90%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .role {
+            margin: 5px 0;
+            font-size: 1.5rem;
+        }
+
+        .linkedIn {
+            max-width: 55px;
+            margin: 0 3px;
+        }
+
+        .gitHub {
+            max-width: 55px;
+            margin: 0 3px;
+        }
     }
 
-    .person {
-        text-align: center;
-        border-radius: 15px;
-        width: 30%;
-        margin: 3%;
-    }
-
-    .picture {
-        width: 90%;
-        height: auto;
-        border-radius: 15px;
-    }
-
-    .role {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
-
-    .linkedIn {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
-    .gitHub {
-        max-width: 55px;
-        margin: 0 3px;
-    }
+    
 
     footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DB7C1E;
+        background-color: @bck-clr;
         width: 100%;
         height: 70px;
+      .mixin-class();
     }
 }
 
 @media(max-width: 500px) {
+    .navigation {
+        width: 100%;
+        height: 50px;
+        background-color: @bck-clr;
+    }
+    
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1%;
+        width: 100%;
+        vertical-align: middle;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+        margin: 0 4%;
+    }
     h1 {
         display: flex;
         justify-content: center;
@@ -208,44 +250,45 @@
         max-width: 1200px;
         width: 100%;
         margin: 5% auto;
+      
+            .person {
+            border-radius: 15px;
+            width: 55%;
+            text-align: center;
+            border-radius: @brd-rds;
+            width: 40%;
+            margin: 3%;
+        }
+
+        .picture {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .role {
+            margin: 5px 0;
+            font-size: 1.5rem;
+        }
+
+        .linkedIn {
+            max-width: 55px;
+            margin: 0 3px;
+        }
+
+        .gitHub {
+            max-width: 55px;
+            margin: 0 3px;
+        }
+
     }
 
-    .person {
-        border-radius: 15px;
-        width: 55%;
-        text-align: center;
-        border-radius: 15px;
-        width: 40%;
-        margin: 3%;
-    }
-
-    .picture {
-        width: 100%;
-        height: auto;
-        border-radius: 15px;
-    }
-
-    .role {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
-
-    .linkedIn {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
-    .gitHub {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
+    
     footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DB7C1E;
+        background-color: @bck-clr;
         width: 100%;
         height: 70px;
+        .mixin-class();
     }
+
 }
