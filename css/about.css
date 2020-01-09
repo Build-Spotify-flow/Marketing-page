@@ -1,18 +1,145 @@
-@media(min-width: 1000px) {
-    h1 {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        font-size: 4rem;
-        font-weight: bold;
-        padding-top: 10px;
-        /* animation: yourAnimation 30s infinite  30s ease; */
-        animation: yourAnimation 5s forwards 0s linear;
-        /* animation: yourAnimation .7s forwards 0s ease; */
-    }
-/* MAKES H1 SPIN */
-
-/* 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@media (min-width: 1000px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-top: 10px;
+    /* animation: yourAnimation 30s infinite  30s ease; */
+    animation: yourAnimation 5s forwards 0s linear;
+    /* animation: yourAnimation .7s forwards 0s ease; */
+  }
+  /* MAKES H1 SPIN */
+  /* 
     @keyframes yourAnimation{
         0%{
             }
@@ -36,216 +163,186 @@
             transform: rotate(380deg);
             }
     } */
-    /* MAKES H1 FADE IN */
-    @keyframes yourAnimation{
-        0%{
-            transform: rotate(0) scale(1.8) translateY(-15%) skewX(0p) skewY(-25deg);
-            opacity: 0;
-            }
-        50%{
-            transform: rotate(0) scale(1.8) translateY(10);
-            opacity: 1;
-            }
-        100%{
-            transform: rotate(0) scale(1.8);
-            opacity: 1;
-            }
+  /* MAKES H1 FADE IN */
+  @keyframes yourAnimation {
+    0% {
+      transform: rotate(0) scale(1.8) translateY(-15%) skewX(0p) skewY(-25deg);
+      opacity: 0;
     }
-    
-    h2 {
-        margin: 5px 0;
-        font-size: 2.0rem;
+    50% {
+      transform: rotate(0) scale(1.8) translateY(10);
+      opacity: 1;
     }
-
-    p {
-        margin: 5px 0;
-        font-style: italic;
-        font-size: 1rem;
+    100% {
+      transform: rotate(0) scale(1.8);
+      opacity: 1;
     }
-
-    .team {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        max-width: 1200px;
-        width: 100%;
-        margin: 5% auto;
-    }
-
-    .person {
-        text-align: center;
-        border-radius: 15px;
-        width: 30%;
-        margin: 3%;
-    }
-
-    .picture {
-        width: 90%;
-        height: 300px;
-        border-radius: 15px;
-    }
-
-    .role {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
-
-    .linkedIn {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
-    .gitHub {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DB7C1E;
-        width: 100%;
-        height: 70px;
-    }
+  }
+  h2 {
+    margin: 5px 0;
+    font-size: 2rem;
+  }
+  p {
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 1rem;
+  }
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    width: 100%;
+    margin: 5% auto;
+  }
+  .person {
+    text-align: center;
+    border-radius: 15px;
+    width: 30%;
+    margin: 3%;
+  }
+  .picture {
+    width: 90%;
+    height: 300px;
+    border-radius: 15px;
+  }
+  .role {
+    margin: 5px 0;
+    font-size: 1.5rem;
+  }
+  .linkedIn {
+    max-width: 55px;
+    margin: 0 3px;
+  }
+  .gitHub {
+    max-width: 55px;
+    margin: 0 3px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DB7C1E;
+    width: 100%;
+    height: 70px;
+  }
 }
-
-@media(max-width: 999px) {
-    h1 {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        font-size: 3rem;
-        font-weight: bold;
-        padding-top: 10px;
-    }
-
-    h2 {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
-
-    p {
-        margin: 5px 0;
-        font-style: italic;
-        font-size: 1rem;
-    }
-
-    .team {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        max-width: 1200px;
-        width: 100%;
-        margin: 5% auto;
-    }
-
-    .person {
-        text-align: center;
-        border-radius: 15px;
-        width: 30%;
-        margin: 3%;
-    }
-
-    .picture {
-        width: 90%;
-        height: auto;
-        border-radius: 15px;
-    }
-
-    .role {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
-
-    .linkedIn {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
-    .gitHub {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DB7C1E;
-        width: 100%;
-        height: 70px;
-    }
+@media (max-width: 999px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  h2 {
+    margin: 5px 0;
+    font-size: 1.5rem;
+  }
+  p {
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 1rem;
+  }
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    width: 100%;
+    margin: 5% auto;
+  }
+  .person {
+    text-align: center;
+    border-radius: 15px;
+    width: 30%;
+    margin: 3%;
+  }
+  .picture {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+  }
+  .role {
+    margin: 5px 0;
+    font-size: 1.5rem;
+  }
+  .linkedIn {
+    max-width: 55px;
+    margin: 0 3px;
+  }
+  .gitHub {
+    max-width: 55px;
+    margin: 0 3px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DB7C1E;
+    width: 100%;
+    height: 70px;
+  }
 }
-
-@media(max-width: 500px) {
-    h1 {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        font-size: 3rem;
-        font-weight: bold;
-        padding-top: 10px;
-    }
-
-    h2 {
-        font-size: 2.0rem;
-        font-weight: bold;
-    }
-
-    p {
-        margin: 5px 0;
-        font-style: italic;
-        font-size: 1rem;
-    }
-
-    .team {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        max-width: 1200px;
-        width: 100%;
-        margin: 5% auto;
-    }
-
-    .person {
-        border-radius: 15px;
-        width: 55%;
-        text-align: center;
-        border-radius: 15px;
-        width: 40%;
-        margin: 3%;
-    }
-
-    .picture {
-        width: 100%;
-        height: auto;
-        border-radius: 15px;
-    }
-
-    .role {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
-
-    .linkedIn {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
-    .gitHub {
-        max-width: 55px;
-        margin: 0 3px;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DB7C1E;
-        width: 100%;
-        height: 70px;
-    }
+@media (max-width: 500px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  p {
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 1rem;
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    width: 100%;
+    margin: 5% auto;
+  }
+  .person {
+    width: 55%;
+    text-align: center;
+    border-radius: 15px;
+    width: 40%;
+    margin: 3%;
+  }
+  .picture {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  .role {
+    margin: 5px 0;
+    font-size: 1.5rem;
+  }
+  .linkedIn {
+    max-width: 55px;
+    margin: 0 3px;
+  }
+  .gitHub {
+    max-width: 55px;
+    margin: 0 3px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DB7C1E;
+    width: 100%;
+    height: 70px;
+  }
 }
