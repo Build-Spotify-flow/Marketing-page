@@ -132,6 +132,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  overflow-x: hidden;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
