@@ -1,251 +1,308 @@
-@media(min-width: 1000px) {
-    h1 {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        font-size: 4rem;
-        font-weight: bold;
-        padding-top: 10px;
-        /* animation: yourAnimation 30s infinite  30s ease; */
-        animation: yourAnimation 5s forwards 0s linear;
-        /* animation: yourAnimation .7s forwards 0s ease; */
-    }
-/* MAKES H1 SPIN */
+// @import "variables";
+// @import "mixins";
+// @import "reset";
+// @import "global";
+// @import "navigation";
+// @import "footer";
+// @import "home-page";
+// @import "about";
 
-/* 
-    @keyframes yourAnimation{
-        0%{
-            }
-        4%{
-            transform: rotate(0deg) scale(1.8) translateY(-10%) skewX(0);
-            opacity: 1;
-            }
-        30%{
-            transform: rotate(0deg) scale(1.8);
-            }
-        50%{
-            transform: rotate(0deg);
-            }
-        57%{
-            transform: rotate(180deg);
-            }
-        97%{
-            transform: rotate(0deg) scale(1.8) translateY(-15%) skewX(0);
-            }
-        100%{
-            transform: rotate(380deg);
-            }
-    } */
-    /* MAKES H1 FADE IN */
-    @keyframes yourAnimation{
-        0%{
-            transform: rotate(0) scale(1.8) translateY(-15%) skewX(0p) skewY(-25deg);
-            opacity: 0;
-            }
-        50%{
-            transform: rotate(0) scale(1.8) translateY(10);
-            opacity: 1;
-            }
-        100%{
-            transform: rotate(0) scale(1.8);
-            opacity: 1;
-            }
-    }
+// h1 {
+//     color: @colr;
+// }
+
+// @media(min-width: 1000px) {
+
+//     .navigation {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//         background-color: @bck-clr;
+//         height: 100px;
+//         box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
+//     }
     
-    h2 {
-        margin: 5px 0;
-        font-size: 2.0rem;
-    }
+//     .links {
+//         display: flex;
+//         justify-content: space-evenly;
+//         margin: 1%;
+//         width: 100%;
+//         vertical-align: middle;
+//     }
+    
+//     nav a {
+//         text-decoration: none;
+//         font-size: 2.2rem;
+//         color: @colr;
+//         padding: 30px;
+//     }
 
-    p {
-        margin: 5px 0;
-        font-style: italic;
-        font-size: 1rem;
-    }
+//     h1 {
+//         display: flex;
+//         justify-content: center;
+//         margin-top: 5%;
+//         font-size: 6.1rem;
+//         font-weight: bold;
+//         padding-top: 10px;
+//         //animation: yourAnimation 2s forwards 0s linear;
+//     }
 
-    .team {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        max-width: 1200px;
-        width: 100%;
-        margin: 5% auto;
-    }
+//     // @keyframes yourAnimation{
+//     //     0%{
+//     //         transform: rotate(0) scale(1.4) translateY(-15%) skewX(0p) skewY(-25deg);
+//     //         opacity: 0;
+//     //         }
+//     //     50%{
+//     //         transform: rotate(0) scale(1.4) translateY(10);
+//     //         opacity: 1;
+//     //         }
+//     //     100%{
+//     //         transform: rotate(0) scale(1.4);
+//     //         opacity: 1;
+//     //         }
+//     // }
+    
+//     h2 {
+//         margin: 5px 0;
+//         font-size: 6.3rem;
+//     }
 
-    .person {
-        text-align: center;
-        border-radius: 15px;
-        width: 30%;
-        margin: 3%;
-    }
+//     p {
+//         margin: 5px 0;
+//         font-style: italic;
+//         font-size: 1.3rem;
+//     }
 
-    .picture {
-        width: 90%;
-        height: 300px;
-        border-radius: 15px;
-    }
+//     .team {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-evenly;
+//         max-width: 1200px;
+//         width: 100%;
+//         margin: 5% auto;
+      
+//       .person {
+//         text-align: center;
+//         border-radius: @brd-rds;
+//         width: 30%;
+//         margin: 3%;
+//         }
 
-    .role {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
+//         .picture {
+//             width: 90%;
+//             height: 300px;
+//             border-radius: 15px;
+//             padding-bottom: 8px;
+//         }
 
-    .linkedIn {
-        max-width: 55px;
-        margin: 0 3px;
-    }
+//         .role {
+//             margin: 5px 0;
+//             font-size: 1.8rem;
+//             padding-top: 2px;
+//         }
 
-    .gitHub {
-        max-width: 55px;
-        margin: 0 3px;
-    }
+//         .linkedIn {
+//             max-width: 55px;
+//             margin: 0 3px;
+//         }
 
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DB7C1E;
-        width: 100%;
-        height: 70px;
-    }
-}
+//         .gitHub {
+//             max-width: 55px;
+//             margin: 0 3px;
+//         }
+//    }
+  
+//     footer {
+//         background-color: @bck-clr;
+//         width: 100%;
+//         height: 100px;
+//       .mixin-class();
+//     }
+// }
 
-@media(max-width: 999px) {
-    h1 {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        font-size: 3rem;
-        font-weight: bold;
-        padding-top: 10px;
-    }
+// @media(max-width: 999px) {
+//     .navigation {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//         background-color: @bck-clr;
+//         height: 70px;
+//         box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
+//     }
+    
+//     .links {
+//         display: flex;
+//         justify-content: space-evenly;
+//         margin: 1%;
+//         width: 100%;
+//         vertical-align: middle;
+//     }
+    
+//     nav a {
+//         text-decoration: none;
+//         font-size: 1.9rem;
+//         color: @colr;
+//         padding: 10px;
+//     }
+//     h1 {
+//         display: flex;
+//         justify-content: center;
+//         margin-top: 5%;
+//         font-size: 6.5rem;
+//         font-weight: bold;
+//         padding-top: 10px;
+//     }
 
-    h2 {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
+//     h2 {
+//         margin: 5px 0;
+//         font-size: 3.5rem;
+//     }
 
-    p {
-        margin: 5px 0;
-        font-style: italic;
-        font-size: 1rem;
-    }
+//     p {
+//         margin: 5px 0;
+//         font-style: italic;
+//         font-size: 1rem;
+//     }
 
-    .team {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        max-width: 1200px;
-        width: 100%;
-        margin: 5% auto;
-    }
+//     .team {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-evenly;
+//         max-width: 1200px;
+//         width: 100%;
+//         margin: 5% auto;
+        
+//         .person {
+//             text-align: center;
+//             border-radius: @brd-rds;
+//             width: 30%;
+//             margin: 3%;
+//         }
 
-    .person {
-        text-align: center;
-        border-radius: 15px;
-        width: 30%;
-        margin: 3%;
-    }
+//         .picture {
+//             width: 90%;
+//             height: auto;
+//             border-radius: 15px;
+//         }
 
-    .picture {
-        width: 90%;
-        height: auto;
-        border-radius: 15px;
-    }
+//         .role {
+//             margin: 5px 0;
+//             font-size: 1.5rem;
+//         }
 
-    .role {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
+//         .linkedIn {
+//             max-width: 55px;
+//             margin: 0 3px;
+//         }
 
-    .linkedIn {
-        max-width: 55px;
-        margin: 0 3px;
-    }
+//         .gitHub {
+//             max-width: 55px;
+//             margin: 0 3px;
+//         }
+//     }
 
-    .gitHub {
-        max-width: 55px;
-        margin: 0 3px;
-    }
+    
 
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DB7C1E;
-        width: 100%;
-        height: 70px;
-    }
-}
+//     footer {
+//         background-color: @bck-clr;
+//         width: 100%;
+//         height: 70px;
+//       .mixin-class();
+//     }
+// }
 
-@media(max-width: 500px) {
-    h1 {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        font-size: 3rem;
-        font-weight: bold;
-        padding-top: 10px;
-    }
+// @media(max-width: 500px) {
+//     .navigation {
+//         width: 100%;
+//         height: 50px;
+//         display: flex;
+//         justify-content: space-between;
+//         background-color: @bck-clr;
+//         box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
+//     }
+    
+//     .links {
+//         display: flex;
+//         justify-content: space-evenly;
+//         margin: 1%;
+//         width: 100%;
+//         vertical-align: middle;
+//     }
+    
+//     nav a {
+//         text-decoration: none;
+//         font-size: 1.5rem;
+//         color: @colr;
+//     }
+    
+//     // h1 {
+//     //     display: flex;
+//     //     justify-content: center;
+//     //     margin-top: 5%;
+//     //     font-size: 3rem;
+//     //     font-weight: bold;
+//     //     padding-top: 10px;
+//     // }
 
-    h2 {
-        font-size: 2.0rem;
-        font-weight: bold;
-    }
+//     // h2 {
+//     //     font-size: 2.0rem;
+//     //     font-weight: bold;
+//     // }
 
-    p {
-        margin: 5px 0;
-        font-style: italic;
-        font-size: 1rem;
-    }
+//     p {
+//         margin: 5px 0;
+//         font-style: italic;
+//         font-size: 1rem;
+//     }
 
-    .team {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        max-width: 1200px;
-        width: 100%;
-        margin: 5% auto;
-    }
+//     .team {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         flex-wrap: wrap;
+//         justify-content: space-evenly;
+//         max-width: 1200px;
+//         width: 100%;
+//         margin: 5% auto;
+      
+//             .person {
+//             border-radius: 15px;
+//             width: 55%;
+//             text-align: center;
+//             border-radius: @brd-rds;
+//             width: 40%;
+//             margin: 3%;
+//         }
 
-    .person {
-        border-radius: 15px;
-        width: 55%;
-        text-align: center;
-        border-radius: 15px;
-        width: 40%;
-        margin: 3%;
-    }
+//         .picture {
+//             width: 100%;
+//             height: auto;
+//             border-radius: 15px;
+//         }
 
-    .picture {
-        width: 100%;
-        height: auto;
-        border-radius: 15px;
-    }
+//         .role {
+//             margin: 5px 0;
+//             font-size: 1.5rem;
+//         }
 
-    .role {
-        margin: 5px 0;
-        font-size: 1.5rem;
-    }
+//         .linkedIn {
+//             max-width: 55px;
+//             margin: 0 3px;
+//         }
 
-    .linkedIn {
-        max-width: 55px;
-        margin: 0 3px;
-    }
+//         .gitHub {
+//             max-width: 55px;
+//             margin: 0 3px;
+//         }
 
-    .gitHub {
-        max-width: 55px;
-        margin: 0 3px;
-    }
+//     }
 
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DB7C1E;
-        width: 100%;
-        height: 70px;
-    }
-}
+    
+//     footer {
+//         background-color: @bck-clr;
+//         width: 100%;
+//         height: 50px;
+//         .mixin-class();
+//     }
+
+// }
